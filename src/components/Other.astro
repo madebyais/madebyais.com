@@ -1,0 +1,56 @@
+---
+const awards = [
+  {
+    title: "Bank Indonesia Hackathon 2024",
+    date: "Aug 2024",
+    description:
+      "Top 5 of Bank Indonesia Hackathon 2024 Artificial Intelligence & Machine Learning for Digital Economy and Finance in Indonesia.",
+  },
+  {
+    title: "Tech-in-Asia Product Development Conference 2018",
+    date: "Jul 2018",
+    description: "Speaker",
+  },
+  {
+    title: "Facebook Indonesia Developer Challenge",
+    date: "Sep 2016",
+    description:
+      "Runner-up (2nd-place) of Facebook Indonesia Developer Challenge.",
+  },
+];
+---
+
+<section
+  id="talks-awards"
+  class="mx-auto px-8 max-w-3xl 2xl:max-w-7xl 2xl:px-16 border-x border-zinc-200 pt-16 pb-8"
+>
+  <div class="w-full grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <div>
+      <h2
+        class="text-base 2xl:text-3xl font-medium text-zinc-300 animate-text revealed"
+      >
+        Talks & Awards
+      </h2>
+      <p
+        class="text-sm 2xl:text-xl font-medium text-zinc-400 animate-text revealed"
+      >
+        Sharing insights and earning recognition through impactful contributions
+        to the design and development community.
+      </p>
+    </div>
+
+    <div class="lg:col-span-2 divide-y gap-4 flex flex-col divide-black/5">
+      {
+        awards.map((item, i) => (
+          <div class={i === 0 ? "pt-0" : "pt-4"}>
+            <h2 class="text-base 2xl:text-2xl font-medium text-zinc-800 animate-text revealed">
+              {item.title}
+            </h2>
+            <div class="text-md mb-5 text-zinc-400">{item.description}</div>
+            <div class="text-normal text-zinc-400 font-mono">{item.date}</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

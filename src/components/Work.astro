@@ -1,0 +1,155 @@
+---
+const works = [
+  {
+    company: "CalvinBall Technologies",
+    role: "Founding Member, Core Platform",
+    description:
+      "Building AI product from zero-to-one, and managing infrastructure.",
+    date: "September 2023 - Present",
+  },
+  {
+    company: "Monolog",
+    role: "Co-Founder",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "April 2022 - Present",
+  },
+  {
+    company: "GoToko",
+    role: "DevOps Lead",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "May 2022 - Aug 2023",
+  },
+  {
+    company: "GoPay, GoTo Group (formerly GoJek)",
+    role: "Engineering Manager, Cloud Foundation Team",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Jan 2022 - Apr 2022",
+  },
+  {
+    company: "GoPay, GoTo Group (formerly GoJek)",
+    role: "System Engineer, Cloud Foundation Team",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Dec 2020 - Jan 2022",
+  },
+  {
+    company: "GoPay, GoTo Group (formerly GoJek)",
+    role: "System Engineer, Cloud Automation Team",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Jun 2020 - Nov 2020",
+  },
+  {
+    company: "GoPay, GoTo Group (formerly GoJek)",
+    role: "Product Engineer, International Expansion Team",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Jan 2019 - Jun 2020",
+  },
+  {
+    company: "GoPay, GoTo Group (formerly GoJek)",
+    role: "Product Engineer, Liquidity Team",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Jan 2018 - Jan 2019",
+  },
+  {
+    company: "Amartha",
+    role: "Head of Technology",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Aug 2016 - Dec 2017",
+  },
+  {
+    company: "CryoWerx",
+    role: "Full-Stack Polyglot Software Engineer",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Dec 2015 - Jul 2016",
+  },
+  {
+    company: "Raydar",
+    role: "Full-Stack Lead Engineer",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Sep 2015 - Dec 2015",
+  },
+  {
+    company: "Setipe",
+    role: "Head of Development",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Jun 2014 - Aug 2015",
+  },
+  {
+    company: "Pricebook",
+    role: "Software Engineer",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Dec 2014 - Jun 2014",
+  },
+  {
+    company: "Blaast",
+    role: "Software Engineer",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Dec 2011 - Nov 2013",
+  },
+  {
+    company: "NCS Pte Ltd (A member of SingTel Group)",
+    role: "Application Specialist",
+    description:
+      "A software company provides solution for startups based in Jakarta.",
+    date: "Dec 2010 - Dec 2011",
+  },
+];
+---
+
+<section
+  id="work"
+  class="mx-auto px-8 max-w-3xl 2xl:max-w-7xl 2xl:px-16 border-x border-zinc-200 pt-16 pb-8"
+>
+  <div class="w-full grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <div>
+      <h2
+        class="text-base 2xl:text-3xl font-medium text-zinc-300 animate-text revealed"
+      >
+        Work
+      </h2>
+      <p
+        class="text-sm 2xl:text-xl font-medium text-zinc-400 animate-text revealed"
+      >
+        Crafting innovative and enjoyable solutions for challenging problems
+      </p>
+
+      <p
+        class="text-sm 2xl:text-xl font-medium text-zinc-400 animate-text revealed"
+      >
+        For more details, please visit my <a
+          href="https://www.linkedin.com/in/farisf/"
+          target="_blank">LinkedIn</a
+        >
+      </p>
+    </div>
+
+    <div class="lg:col-span-2 divide-y gap-4 flex flex-col divide-black/5">
+      {
+        works.map((w, i) => (
+          <div class={i === 0 ? "pt-0" : "pt-4"}>
+            <h2 class="text-base 2xl:text-2xl font-medium text-zinc-800 animate-text revealed">
+              {w.company}
+            </h2>
+            <h5 class="text-sm 2xl:text-lg font-medium text-zinc-400 animate-text revealed mb-5">
+              {w.role}
+            </h5>
+            {/* <div class="text-md mb-5">{w.description}</div> */}
+            <div class="text-normal text-zinc-400 font-mono">{w.date}</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

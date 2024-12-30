@@ -1,0 +1,26 @@
+{
+  "cssVariables.lookupFiles": ["**/*.css"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.fontSize": 14.5,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.dev": false,
+    "**/.idea": true,
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/coverage": true,
+    "**/logs": true,
+    "**/next-env.d.ts": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

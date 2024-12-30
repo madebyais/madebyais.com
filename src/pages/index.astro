@@ -1,0 +1,50 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Navigation from "../components/Navigation.astro";
+import Other from "../components/Other.astro";
+import Work from "../components/Work.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <header
+      class="mx-auto px-8 max-w-3xl 2xl:max-w-7xl 2xl:px-16 border-x border-zinc-200 pt-16 pb-8"
+    >
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div>
+          <img
+            class="rounded-full w-20 mb-4"
+            src="https://media.licdn.com/dms/image/v2/C5103AQHTk0qh6nrt2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1554980017110?e=1741219200&v=beta&t=lsFO8Jp0NXz4vT9o5yOXt2nHBpYmgn2b3DmOe9m-p3U"
+            alt="Faris"
+          />
+          <h1 class="text-base 2xl:text-3xl text-zinc-400 text-balance">
+            Welcome to the small corner on the internet of Faris.
+          </h1>
+        </div>
+        <p class="text-base 2xl:text-3xl text-zinc-500">
+          A versatile full-stack developer with more than 13 years of experience
+          in tech-startups crafting innovative and enjoyable solutions for
+          challenging problems.
+        </p>
+      </div>
+    </header>
+
+    <Navigation />
+
+    <div class="w-full border-t"></div>
+    <Work />
+    <div class="w-full border-t"></div>
+    <Other />
+    <div class="w-full border-t"></div>
+    <div
+      class="mx-auto px-8 max-w-3xl 2xl:max-w-7xl 2xl:px-16 border-x border-zinc-200 pt-16 pb-8 text-center"
+    >
+      &copy; 2024. @madebyais
+    </div>
+  </body>
+</html>
